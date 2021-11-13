@@ -1,0 +1,6 @@
+.review-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 18px;
+    margin-top: 20px;
+}

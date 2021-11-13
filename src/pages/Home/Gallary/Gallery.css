@@ -2,8 +2,11 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-bottom: 20px;
-    grid-gap: 10px;
+    grid-gap: 20px;
+    padding: 20px;
+    background-color: rgb(224, 212, 212);
 }
+
 @media only screen and (max-width: 688px) {
     .gallery{
       grid-template-columns: repeat(1 ,1fr);

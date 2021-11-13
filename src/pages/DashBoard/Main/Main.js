@@ -5,10 +5,7 @@ import Orders from '../Orders/Orders';
 const Main = () => {
     return (
         <Grid container spacing={2}>
-                <Grid item xs={4}>
-                  
-                </Grid>
-                <Grid item xs={8}>
+                <Grid item xs={12}>
                   <Orders></Orders>
                 </Grid>
               </Grid>

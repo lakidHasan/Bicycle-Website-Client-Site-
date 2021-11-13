@@ -10,7 +10,7 @@ import photo6 from "../../../Images/Bycicle/bycicle (6).jpg";
 
 const Gallery = () => {
     return (
-        <div className="gallery2">
+        <div className="gallery-container">
             <h2 className="text-primary mt-5 mb-3">Life Is Beautiful With Bycicle </h2>
             <div className="gallery">
             <img src={photo1} alt="" />

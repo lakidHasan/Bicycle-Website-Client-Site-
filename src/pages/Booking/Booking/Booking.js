@@ -24,7 +24,7 @@ const Booking = () => {
             ...bookingInfo,
         }
         // sent to server 
-        fetch('http://localhost:5000/orders', {
+        fetch('https://rocky-mountain-96539.herokuapp.com/orders', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -43,7 +43,7 @@ const Booking = () => {
     const [details, setDetails] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5000/bycicles')
+        fetch('https://rocky-mountain-96539.herokuapp.com/bycicles')
         .then(res => res.json())
         .then(data => setDetails(data))
     },[])

@@ -7,7 +7,7 @@ const AddBycicle = () => {
     const { register, handleSubmit, reset } = useForm();
      const onSubmit = data => {
         console.log(data);
-        axios.post('http://localhost:5000/bycicles', data)
+        axios.post('https://rocky-mountain-96539.herokuapp.com/bycicles', data)
         .then(res => {
             if(res.data.insertedId){
                 alert ('added successfully');

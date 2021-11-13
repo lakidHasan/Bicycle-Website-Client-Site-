@@ -13,7 +13,7 @@ const Orders = () => {
     const [ordersList, setOrdersList] = useState([]);
 
     useEffect(()=>{
-        const url =`http://localhost:5000/orders?email=${user.email}`
+        const url =`https://rocky-mountain-96539.herokuapp.com/orders?email=${user.email}`
         fetch(url)
         .then(res => res.json())
         .then (data => setOrdersList(data));
@@ -28,8 +28,8 @@ const Orders = () => {
             <TableCell>Name</TableCell>
             <TableCell align="right">Email</TableCell>
             <TableCell align="right">Phone Number</TableCell>
-            <TableCell align="right">Carbs&nbsp;(g)</TableCell>
-            <TableCell align="right">Protein&nbsp;(g)</TableCell>
+            <TableCell align="right">Delete Order</TableCell>
+            
           </TableRow>
         </TableHead>
         <TableBody>

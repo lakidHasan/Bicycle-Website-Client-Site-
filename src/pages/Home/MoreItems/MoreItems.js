@@ -5,7 +5,7 @@ import "./MoreItems.css";
 const MoreItems = () => {
     const[moreItems, setMoreItems] = useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/bycicle2')
+        fetch('https://rocky-mountain-96539.herokuapp.com/bycicle2')
         .then(res => res.json())
         .then (data => setMoreItems(data));
     } ,[])

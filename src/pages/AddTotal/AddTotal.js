@@ -7,7 +7,7 @@ const AddTotal = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
        console.log(data);
-       axios.post('http://localhost:5000/bycicle2', data)
+       axios.post('https://rocky-mountain-96539.herokuapp.com/bycicle2', data)
        .then(res => {
            if(res.data.insertedId){
                alert("Added Done");
