@@ -1,0 +1,13 @@
+.add-bycicle form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.add-bycicle form input, textarea{
+   width: 40%; 
+   margin-bottom: 10px;
+}
